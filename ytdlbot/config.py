@@ -42,7 +42,7 @@ BROKER = os.getenv("BROKER", f"redis://{REDIS}:6379/1")
 
 MYSQL_HOST = os.getenv("MYSQL_HOST", "mysql")
 MYSQL_USER = os.getenv("MYSQL_USER", "root")
-MYSQL_PASS = os.getenv("MYSQL_PASS")
+MYSQL_PASS = os.getenv("MYSQL_PASS", "")
 
 AUDIO_FORMAT = os.getenv("AUDIO_FORMAT")
 ARCHIVE_ID = os.getenv("ARCHIVE_ID")
