@@ -28,7 +28,7 @@ TG_NORMAL_MAX_SIZE = 2000 * 1024 * 1024
 EXPIRE = 24 * 3600
 
 ENABLE_VIP = os.getenv("VIP", False)
-OWNER = os.getenv("OWNER", "BennyThink")
+OWNER = os.getenv("OWNER", "K")
 
 # limitation settings
 AUTHORIZED_USER: str = os.getenv("AUTHORIZED_USER", "")
@@ -63,8 +63,8 @@ RCLONE_PATH = os.getenv("RCLONE")
 TMPFILE_PATH = os.getenv("TMPFILE")
 
 # payment settings
-AFD_LINK = os.getenv("AFD_LINK", "https://afdian.net/@BennyThink")
-COFFEE_LINK = os.getenv("COFFEE_LINK", "https://www.buymeacoffee.com/bennythink")
+AFD_LINK = os.getenv("AFD_LINK", "https://afdian.net/")
+COFFEE_LINK = os.getenv("COFFEE_LINK", "https://www.buymeacoffee.com/")
 COFFEE_TOKEN = os.getenv("COFFEE_TOKEN")
 AFD_TOKEN = os.getenv("AFD_TOKEN")
 AFD_USER_ID = os.getenv("AFD_USER_ID")
