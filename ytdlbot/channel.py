@@ -177,5 +177,5 @@ class Channel(Payment):
 
 
 if __name__ == "__main__":
-    s = Channel.extract_canonical_link("https://www.youtube.com/shorts/KkbYbknjPBM")
+    s = Channel.extract_canonical_link("https://www.youtube.com/shorts/")
     print(s)
