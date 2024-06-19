@@ -3,11 +3,10 @@ ADD requirements.txt /tmp/
 RUN apt update && apt install -y git && pip3 install --user -r /tmp/requirements.txt && rm /tmp/requirements.txt
 
 FROM python:3.11-slim
-WORKDIR /ytdlbot/ytdlbot
+WORKDIR /ytdlbot
 ENV TZ=Europe/London
 RUN apt update && apt install -y --no-install-recommends --no-install-suggests ffmpeg vnstat git aria2
 COPY --from=builder /root/.local /usr/local
 COPY . /ytdlbot
 
-# Modified line
-CMD ["python", "ytdlbot/ytdl_bot.py"]
+CMD ["python", "/ytdlbot/ytdlbot/ytdl_bot.py"]
