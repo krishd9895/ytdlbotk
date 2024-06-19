@@ -1,1 +1,1 @@
-worker: python ytdlbot/ytdl_bot.py
+worker: ./start.sh
